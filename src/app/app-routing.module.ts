@@ -12,6 +12,7 @@ import {AboutUsComponent} from "./demo/components/about-us/about-us.component";
                 path: '', component: AppLayoutComponent,
                 children: [
                     { path: 'uikit', loadChildren: () => import('./demo/components/uikit/uikit.module').then(m => m.UIkitModule) },
+                    { path: 'cart', loadChildren: () => import('./demo/components/shopping-cart/shopping-cart.module').then(m => m.ShoppingCartModule) },
                 ]
             },
             { path: 'auth', loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
